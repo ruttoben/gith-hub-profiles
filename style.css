@@ -1,0 +1,252 @@
+@import url('https://fonts.googleeapis.com/css2?family=poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3A98B9;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:100vw;
+    margin: 1rem;
+}
+.user-info h2{
+    text-align: center;
+}
+.user-form{
+    width: 80%;
+    max-width: 70%;
+}
+.user-form input {
+    width: 100%; 
+    margin-bottom: 1rem;
+    padding: 0.5rem; 
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    border-radius: 2rem;
+    font-family: inherit;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1)
+    0 15px 40px rgba(154, 160, 185, 0.05) ;
+}  
+
+.user-form::placeholder{
+    color: black;
+}
+.user-form :focus{
+    outline: none;
+}
+
+.card{
+    background-color: #181823; 
+    font-style: none;
+    padding: 2rem;
+    margin: 1rem;
+    width: 65vw;
+    height: 65vh; 
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.8);
+    border-radius: 1.5rem;
+}
+
+.avatar{
+    border: 10px solid #3A98B9;
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    flex-shrink: 20%;
+}
+.user-info{
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card p{
+    display: inline-block;
+    size-adjust: auto;
+    flex-basis: auto;
+}
+.card ul{
+    display: flex;
+    padding: 1rem;
+  
+}
+.card li{
+    list-style: none;
+    padding-right: 2rem;
+    font-style: inherit;
+
+}
+.repos a{
+    text-decoration: none;
+    color: aqua;
+    font-size: small;
+    display: flex;
+    padding-right: 1rem;
+  }
+
+  .repos{
+    text-decoration: none;
+    color: #339ad6;
+    border-radius: 1rem;
+    padding: 1px;
+    background-color: rgb(66, 64, 64);
+    font-size: medium;
+    
+  }
+  #repos{
+    width: 100%;
+    display:flexbox;
+    justify-content: space-around;
+  }
+    
+@media (max-width: 485px) {
+    .user-form{
+        width: 80%;
+        max-width: 70%;
+    }
+    .user-form input {
+        width: 100%; 
+        margin-bottom: 1rem;
+        padding: 0.6rem; 
+        border: none;
+        display:
+        inline-block;
+        font-size: 1rem;
+        border-radius: 2rem;
+        font-family: inherit;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
+                    0 5px 10px rgba(0, 0, 0, 0.6) ;
+    }  
+    
+    .user-form::placeholder{
+        color: black;
+    }
+    body {
+      margin: 0rem;
+    }
+    .avatar {
+      border: 0.1rem solid #3A98B9;
+      height: 4rem;
+      width: 4rem;
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .user-info {
+     
+      padding: 0.2rem;
+      align-content: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      
+      
+    }
+    
+    .card {
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-self: center;
+    }
+    .card p {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 80%;
+      font-size: xx-small;
+    }
+    .card li {
+       font-style: inherit; 
+      padding: 0.2rem;
+      font-size: small;
+    }
+    .card ul {
+        padding: 1rem;
+    }
+  
+  
+  * {
+    align-content: center;
+  }
+  
+  #repos {
+    text-decoration: none;
+    color: aqua;
+    font-size: xx-small;
+    display: flex;
+    padding: 0.3rem;
+    justify-content: space-evenly ;
+
+  }
+  
+}
+@media (max-width: 380px) {
+    .avatar {
+      border: 0.1rem solid #3A98B9;
+      height: 4rem;
+      width: 4rem;
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .user-info {
+     
+      padding: 0.09rem;
+      align-content: inherit;
+      display: flexbox;
+      top:0;
+      
+      
+    }
+    
+    .card {
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-self: center;
+    }
+    .card p {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 80%;
+      font-size: xx-small;
+    }
+    .card li {
+       font-style: inherit; 
+      padding: 0.2rem;
+      font-size: small;
+    }
+    .card ul {
+        padding: 1rem;
+    }
+  
+  
+  * {
+    align-content: center;
+  }
+  
+  #repos {
+    text-decoration: none;
+    color: aqua;
+    font-size: xx-small;
+    display: flex;
+    padding: 0.3rem;
+    justify-content: space-evenly ;
+
+  }
+  
+}
