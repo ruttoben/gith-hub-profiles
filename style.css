@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #3A98B9;
+    background-color:   #0d4464;
     color: #fff;
     font-family: 'poppins', sans-serif;
     display: flex;
@@ -35,29 +35,27 @@ body {
     font-size: 1rem;
     border-radius: 2rem;
     font-family: inherit;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1)
-    0 15px 40px rgba(154, 160, 185, 0.05) ;
 }  
 
-.user-form::placeholder{
-    color: black;
-}
+
 .user-form :focus{
     outline: none;
 }
 
-.card{
+.card{ 
+    
     background-color: #181823; 
     font-style: none;
-    padding: 2rem;
-    margin: 1rem;
     width: 65vw;
     height: 65vh; 
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.8);
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.8);
     border-radius: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
 }
+
 
 .avatar{
     border: 10px solid #3A98B9;
@@ -69,76 +67,76 @@ body {
 }
 .user-info{
     padding: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
+    flex: 1 1 30;
 
 }
 .card p{
-    display: inline-block;
-    size-adjust: auto;
-    flex-basis: auto;
+    font-size: .8rem;
 }
 .card ul{
+  padding: 2rem 2rem .6rem 2rem;
     display: flex;
-    padding: 1rem;
-  
+    flex: 1 1 2;
+    
 }
-.card li{
+.user-info ul li{
     list-style: none;
     padding-right: 2rem;
     font-style: inherit;
+    align-items: center;
+    justify-content: space-around;
+  
 
 }
-.repos a{
+#repos{
+    justify-content: left;
+    display: flex;
+} 
+#repos a{
     text-decoration: none;
     color: aqua;
     font-size: small;
-    display: flex;
-    padding-right: 1rem;
+    display: flex;   
+    padding: .2rem; 
   }
 
   .repos{
     text-decoration: none;
     color: #339ad6;
     border-radius: 1rem;
-    padding: 1px;
+    padding: .1rem;
+    margin-right: .4rem;
     background-color: rgb(66, 64, 64);
     font-size: medium;
     
-  }
-  #repos{
-    width: 100%;
-    display:flexbox;
-    justify-content: space-around;
+
+    
   }
     
-@media (max-width: 485px) {
-    .user-form{
-        width: 80%;
-        max-width: 70%;
-    }
-    .user-form input {
-        width: 100%; 
-        margin-bottom: 1rem;
-        padding: 0.6rem; 
-        border: none;
-        display:
-        inline-block;
-        font-size: 1rem;
-        border-radius: 2rem;
-        font-family: inherit;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
-                    0 5px 10px rgba(0, 0, 0, 0.6) ;
-    }  
+@media (width: 485px) {
     
-    .user-form::placeholder{
-        color: black;
+    #repos a{
+      text-decoration: none;
+      color: aqua;
+      font-size: small;
+      display: flex;
+      padding-right: .1rem;
+      margin-right: .3rem;
+      flex-direction: column;
+  
+     
     }
+    .card .user-info  ul li{
+      padding-right: 0;
+      font-size: .7rem;
+      
+    }
+    
     body {
       margin: 0rem;
     }
     .avatar {
-      border: 0.1rem solid #3A98B9;
+      border: 0.4rem solid #3A98B9;
       height: 4rem;
       width: 4rem;
       display: flex;
@@ -146,11 +144,10 @@ body {
   
     }
     .user-info {
-     
-      padding: 0.2rem;
       align-content: inherit;
       display: flex;
       flex-wrap: wrap;
+      flex-shrink: 3;
       
       
     }
@@ -165,7 +162,7 @@ body {
     .card p {
       display: flex;
       flex-wrap: wrap;
-      flex-basis: 80%;
+      flex-basis: 50%;
       font-size: xx-small;
     }
     .card li {
@@ -173,10 +170,7 @@ body {
       padding: 0.2rem;
       font-size: small;
     }
-    .card ul {
-        padding: 1rem;
-    }
-  
+
   
   * {
     align-content: center;
@@ -190,9 +184,8 @@ body {
     padding: 0.3rem;
     justify-content: space-evenly ;
 
-  }
+  }}
   
-}
 @media (max-width: 380px) {
     .avatar {
       border: 0.1rem solid #3A98B9;
