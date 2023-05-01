@@ -67,11 +67,16 @@ body {
 }
 .user-info{
     padding: 0.5rem;
-    flex: 1 1 30;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 20%;
 
 }
 .card p{
     font-size: .8rem;
+    
 }
 .card ul{
   padding: 2rem 2rem .6rem 2rem;
@@ -113,15 +118,14 @@ body {
     
   }
     
-@media (width: 485px) {
+@media (width: 700px) {
     
     #repos a{
       text-decoration: none;
       color: aqua;
-      font-size: small;
+      
       display: flex;
-      padding-right: .1rem;
-      margin-right: .3rem;
+      
       flex-direction: column;
   
      
@@ -147,14 +151,14 @@ body {
       align-content: inherit;
       display: flex;
       flex-wrap: wrap;
-      flex-shrink: 3;
+      flex-shrink: 1;
       
       
     }
     
     .card {
       padding: 2rem;
-      margin: 0;
+      width: fit-content;
       display: flex;
       flex-wrap: wrap;
       justify-self: center;
@@ -162,19 +166,11 @@ body {
     .card p {
       display: flex;
       flex-wrap: wrap;
-      flex-basis: 50%;
-      font-size: xx-small;
     }
     .card li {
-       font-style: inherit; 
       padding: 0.2rem;
       font-size: small;
     }
-
-  
-  * {
-    align-content: center;
-  }
   
   #repos {
     text-decoration: none;
@@ -186,13 +182,12 @@ body {
 
   }}
   
-@media (max-width: 380px) {
+@media (max-width: 500px) {
     .avatar {
       border: 0.1rem solid #3A98B9;
       height: 4rem;
       width: 4rem;
-      display: flex;
-      flex-direction: column;
+     
   
     }
     .user-info {
@@ -200,14 +195,15 @@ body {
       padding: 0.09rem;
       align-content: inherit;
       display: flexbox;
-      top:0;
+      
       
       
     }
     
     .card {
-      padding: 2rem;
-      margin: 0;
+      padding: 1rem;
+      margin: .7rem 2rem 4rem 1rem;
+      width: fit-content;
       display: flex;
       flex-wrap: wrap;
       justify-self: center;
@@ -215,8 +211,7 @@ body {
     .card p {
       display: flex;
       flex-wrap: wrap;
-      flex-basis: 80%;
-      font-size: xx-small;
+      padding: .6rem;
     }
     .card li {
        font-style: inherit; 
@@ -224,7 +219,7 @@ body {
       font-size: small;
     }
     .card ul {
-        padding: 1rem;
+        padding: 0;
     }
   
   
@@ -235,7 +230,6 @@ body {
   #repos {
     text-decoration: none;
     color: aqua;
-    font-size: xx-small;
     display: flex;
     padding: 0.3rem;
     justify-content: space-evenly ;
