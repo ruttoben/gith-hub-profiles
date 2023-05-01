@@ -37,7 +37,6 @@ body {
     font-family: inherit;
 }  
 
-
 .user-form :focus{
     outline: none;
 }
@@ -49,11 +48,12 @@ body {
     width: 65vw;
     height: 65vh; 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     box-shadow: 0 5px 10px rgba(10, 10, 10, 0.8);
     border-radius: 1.5rem;
     justify-content: center;
     padding: 1rem;
+    align-items: center;
 }
 
 
@@ -65,6 +65,7 @@ body {
     display: flex;
     flex-shrink: 20%;
 }
+
 .user-info{
     padding: 0.5rem;
     display: flex;
@@ -96,6 +97,8 @@ body {
 #repos{
     justify-content: left;
     display: flex;
+    opacity: 0.6;
+    margin: 1rem .1rem 1rem 1rem;
 } 
 #repos a{
     text-decoration: none;
@@ -117,123 +120,24 @@ body {
 
     
   }
-    
-@media (width: 700px) {
-    
-    #repos a{
-      text-decoration: none;
-      color: aqua;
-      
-      display: flex;
-      
-      flex-direction: column;
-  
-     
-    }
-    .card .user-info  ul li{
-      padding-right: 0;
-      font-size: .7rem;
-      
-    }
-    
-    body {
-      margin: 0rem;
-    }
-    .avatar {
-      border: 0.4rem solid #3A98B9;
-      height: 4rem;
-      width: 4rem;
-      display: flex;
-      flex-direction: column;
-  
-    }
-    .user-info {
-      align-content: inherit;
-      display: flex;
-      flex-wrap: wrap;
-      flex-shrink: 1;
-      
-      
-    }
-    
-    .card {
-      padding: 2rem;
-      width: fit-content;
-      display: flex;
-      flex-wrap: wrap;
-      justify-self: center;
-    }
-    .card p {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .card li {
-      padding: 0.2rem;
-      font-size: small;
-    }
-  
-  #repos {
-    text-decoration: none;
-    color: aqua;
-    font-size: xx-small;
-    display: flex;
-    padding: 0.3rem;
-    justify-content: space-evenly ;
-
-  }}
   
 @media (max-width: 500px) {
-    .avatar {
-      border: 0.1rem solid #3A98B9;
-      height: 4rem;
-      width: 4rem;
-     
-  
-    }
-    .user-info {
-     
-      padding: 0.09rem;
-      align-content: inherit;
-      display: flexbox;
-      
-      
-      
+    
+  .user-info {
+      max-width: 400px;  
+      padding: 0 2rem 2rem 0rem;
     }
     
     .card {
-      padding: 1rem;
       margin: .7rem 2rem 4rem 1rem;
       width: fit-content;
-      display: flex;
-      flex-wrap: wrap;
-      justify-self: center;
+      flex-direction: column;
+      justify-items: center;
     }
-    .card p {
-      display: flex;
-      flex-wrap: wrap;
-      padding: .6rem;
-    }
-    .card li {
-       font-style: inherit; 
-      padding: 0.2rem;
-      font-size: small;
-    }
-    .card ul {
-        padding: 0;
-    }
-  
-  
-  * {
-    align-content: center;
-  }
-  
-  #repos {
-    text-decoration: none;
-    color: aqua;
-    display: flex;
-    padding: 0.3rem;
-    justify-content: space-evenly ;
 
-  }
+    .image{
+      align-self: center;
+    }
+  
   
 }
